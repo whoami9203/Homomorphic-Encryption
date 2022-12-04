@@ -16,6 +16,8 @@ uint32_t multDepth = 30;
 uint32_t scaleModSize = 50;
 uint32_t batchSize = 256;
 
+export OMP_NUM_THREADS=1;
+
 int main() {
   int T = 5;
   vector<Ciphertext<DCRTPoly>> ctx_results(T);
