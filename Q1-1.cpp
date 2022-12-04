@@ -33,6 +33,7 @@ int main() {
   parameters.SetMultiplicativeDepth(multDepth);
   parameters.SetScalingModSize(scaleModSize);
   parameters.SetBatchSize(batchSize);
+  parameters.SetScalingTechnique(FIXEDMANUAL);
   CryptoContext<DCRTPoly> context = GenCryptoContext(parameters);
   context->Enable(PKE);
   context->Enable(KEYSWITCH);
