@@ -51,13 +51,13 @@ int main() {
 
   for (int t = 0; t < T; t++) {
     // TODO: pack vectors a and b as plaintexts
-    ptx_a = MakeCKKSPackedPlaintext(a);
-    ptx_b = MakeCKKSPackedPlaintext(b);
+    ptx_a = context->MakeCKKSPackedPlaintext(a);
+    ptx_b = context->MakeCKKSPackedPlaintext(b);
 
     // TODO: pack SID as a plaintext
     vector<double> vec_SID(n);
     fill(vec_SID.begin(), vec_SID.end(), SID);
-    ptx_SID = MakeCKKSPackedPlaintext(vec_SID);
+    ptx_SID = context->MakeCKKSPackedPlaintext(vec_SID);
 
     // TODO: encrypt plaintexts as ciphertexts
     ctx_a = context->Encrypt(ptx_a);
