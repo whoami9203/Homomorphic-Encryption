@@ -60,8 +60,8 @@ int main() {
     ptx_SID = context->MakeCKKSPackedPlaintext(vec_SID);
 
     // TODO: encrypt plaintexts as ciphertexts
-    ctx_a = context->Encrypt(ptx_a);
-    ctx_b = context->Encrypt(ptx_b);
+    ctx_a = context->Encrypt(keyPair.publicKey, ptx_a);
+    ctx_b = context->Encrypt(keyPair.publicKey, ptx_b);
 
     // TODO: calculate ctx_result = (ctx_a + SID) * ctx_b
     ctx_result = context->EvalAdd(ctx_a, ptx_SID);
