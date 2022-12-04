@@ -12,7 +12,7 @@ using namespace std;
 // TODO: set SID as last 3 digits of your student id without tilling zeros
 const double SID = 102;
 
-uint32_t multDepth = 1;
+uint32_t multDepth = 2;
 uint32_t scaleModSize = 50;
 uint32_t batchSize = 256;
 
