@@ -13,7 +13,7 @@ using namespace std;
 const double SID = 123;
 
 uint32_t multDepth = 30;
-uint32_t scaleModSize = 30;
+uint32_t scaleModSize = 50;
 uint32_t batchSize = 256;
 
 int main() {
